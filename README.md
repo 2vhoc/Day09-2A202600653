@@ -1,5 +1,7 @@
-# 🛒 Multi-Agent Shopping Assistant
 
+
+# 🛒 Multi-Agent Shopping Assistant
+## Log test: src/artifacts
 > Trợ lý mua sắm AI sử dụng kiến trúc đa tác tử (Multi-Agent) với LangGraph, RAG và LLM.
 
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
