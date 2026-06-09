@@ -1,0 +1,338 @@
+{
+  "question": "Cho tôi xem danh sách đơn hàng của khách hàng C001",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": false,
+    "needs_data": true,
+    "selected_workers": [
+      "data"
+    ],
+    "order_ids": [],
+    "customer_ids": [
+      "C001"
+    ],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {},
+  "data_result": {
+    "status": "ok",
+    "facts": [
+      "Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6.",
+      "Danh sách đơn gần đây: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed)."
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_customer_by_id",
+        "args": {
+          "customer_id": "C001"
+        }
+      },
+      {
+        "tool": "get_orders_by_customer_id",
+        "args": {
+          "customer_id": "C001",
+          "limit": 10
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "ok",
+        "customer": {
+          "customer_id": "C001",
+          "customer_name": "Nguyen Thu Anh",
+          "gender": "female",
+          "tier": "Gold",
+          "max_voucher_per_month": 10,
+          "vouchers_used_this_month": 4,
+          "remaining_voucher_quota_this_month": 6,
+          "email": "nguyen.thu.anh01@example.com",
+          "phone": "0901234567",
+          "city": "Ho Chi Minh",
+          "district": "Binh Thanh",
+          "joined_at": "2024-02-05T14:35",
+          "loyalty_points": 2416,
+          "preferred_categories": [
+            "fashion",
+            "beauty",
+            "home"
+          ],
+          "support_flags": [
+            "frequent_buyer"
+          ],
+          "default_address": {
+            "line1": "128 Nguyen Gia Tri",
+            "district": "Binh Thanh",
+            "city": "Ho Chi Minh",
+            "country": "VN"
+          },
+          "account_status": "active",
+          "total_orders": 4,
+          "total_spent": 4675941,
+          "latest_order_id": "2259"
+        }
+      },
+      {
+        "status": "ok",
+        "customer_id": "C001",
+        "count": 4,
+        "orders": [
+          {
+            "order_id": "1971",
+            "customer_id": "C001",
+            "customer_name": "Nguyen Thu Anh",
+            "order_status": "in_transit",
+            "payment_method": "e_wallet",
+            "payment_status": "paid",
+            "shipping_method": "fast",
+            "carrier": "SPX Express",
+            "tracking_number": "VN1971888123",
+            "warehouse_city": "Ho Chi Minh",
+            "destination_city": "Ho Chi Minh",
+            "destination_district": "Binh Thanh",
+            "created_at": "2026-06-05T10:15",
+            "packed_at": "2026-06-05T13:40",
+            "handed_over_at": "2026-06-05T17:10",
+            "estimated_delivery": "2026-06-09",
+            "delivered_at": null,
+            "completed_at": null,
+            "eligible_for_return_until": null,
+            "can_return_now": false,
+            "returnable_items_count": 1,
+            "subtotal": 1180000,
+            "shipping_fee": 28000,
+            "discount_amount": 90000,
+            "final_total": 1118000,
+            "voucher_code": "PLAT-FS-0626-C001",
+            "is_split_order": false,
+            "parcel_count": 1,
+            "current_location": "Destination Delivery Station",
+            "latest_status_note": "Đơn hàng đang trên đường giao, dự kiến giao trong ngày 2026-06-09.",
+            "items": [
+              {
+                "product_id": "P197101",
+                "seller_sku": "SKU-1971-01",
+                "product_name": "Giày sneaker StreetGo",
+                "category": "fashion",
+                "quantity": 1,
+                "unit_price": 1180000,
+                "returnable": true,
+                "return_window_days": 15,
+                "fragile": false,
+                "shop_name": "StyleLab Fashion"
+              }
+            ]
+          },
+          {
+            "order_id": "1901",
+            "customer_id": "C001",
+            "customer_name": "Nguyen Thu Anh",
+            "order_status": "completed",
+            "payment_method": "bank_transfer",
+            "payment_status": "paid",
+            "shipping_method": "fast",
+            "carrier": "Giao Hang Tiet Kiem",
+            "tracking_number": "VN1901958767",
+            "warehouse_city": "Ho Chi Minh",
+            "destination_city": "Ho Chi Minh",
+            "destination_district": "Binh Thanh",
+            "created_at": "2026-05-16T14:35",
+            "packed_at": "2026-05-17T01:35",
+            "handed_over_at": "2026-05-17T06:35",
+            "estimated_delivery": "2026-05-19",
+            "delivered_at": "2026-05-18T16:35",
+            "completed_at": "2026-05-20T16:35",
+            "eligible_for_return_until": "2026-06-02",
+            "can_return_now": false,
+            "returnable_items_count": 1,
+            "subtotal": 290900,
+            "shipping_fee": 43556,
+            "discount_amount": 31029,
+            "final_total": 303427,
+            "voucher_code": null,
+            "is_split_order": false,
+            "parcel_count": 1,
+            "current_location": "Returned to Seller Warehouse",
+            "latest_status_note": "Đơn hàng đã hoàn tất và không có yêu cầu xử lý thêm.",
+            "items": [
+              {
+                "product_id": "P190101",
+                "seller_sku": "SKU-1901-01",
+                "product_name": "Bình nước thể thao ActiveFlow 1L",
+                "category": "sports",
+                "quantity": 2,
+                "unit_price": 145450,
+                "returnable": true,
+                "return_window_days": 15,
+                "fragile": false,
+                "shop_name": "TechHub Official"
+              }
+            ]
+          },
+          {
+            "order_id": "2160",
+            "customer_id": "C001",
+            "customer_name": "Nguyen Thu Anh",
+            "order_status": "in_transit",
+            "payment_method": "cod",
+            "payment_status": "paid",
+            "shipping_method": "standard",
+            "carrier": "Giao Hang Tiet Kiem",
+            "tracking_number": "VN2160950551",
+            "warehouse_city": "Ho Chi Minh",
+            "destination_city": "Ho Chi Minh",
+            "destination_district": "Binh Thanh",
+            "created_at": "2026-02-21T12:20",
+            "packed_at": "2026-02-21T23:20",
+            "handed_over_at": "2026-02-22T02:20",
+            "estimated_delivery": "2026-02-24",
+            "delivered_at": null,
+            "completed_at": null,
+            "eligible_for_return_until": null,
+            "can_return_now": false,
+            "returnable_items_count": 0,
+            "subtotal": 1105605,
+            "shipping_fee": 35699,
+            "discount_amount": 48428,
+            "final_total": 1092876,
+            "voucher_code": null,
+            "is_split_order": false,
+            "parcel_count": 1,
+            "current_location": "Ha Noi Sorting Center",
+            "latest_status_note": "Đơn hàng đang trên đường giao đến người nhận.",
+            "items": [
+              {
+                "product_id": "P216001",
+                "seller_sku": "SKU-2160-01",
+                "product_name": "Mã quà tặng học trực tuyến SkillPass",
+                "category": "digital",
+                "quantity": 3,
+                "unit_price": 368535,
+                "returnable": false,
+                "return_window_days": 0,
+                "fragile": false,
+                "shop_name": "StyleLab Fashion"
+              }
+            ]
+          },
+          {
+            "order_id": "2259",
+            "customer_id": "C001",
+            "customer_name": "Nguyen Thu Anh",
+            "order_status": "completed",
+            "payment_method": "bank_transfer",
+            "payment_status": "paid",
+            "shipping_method": "fast",
+            "carrier": "Ninja Van",
+            "tracking_number": "VN2259227468",
+            "warehouse_city": "Ha Noi",
+            "destination_city": "Ho Chi Minh",
+            "destination_district": "Binh Thanh",
+            "created_at": "2026-02-03T08:10",
+            "packed_at": "2026-02-03T14:10",
+            "handed_over_at": "2026-02-03T22:10",
+            "estimated_delivery": "2026-02-04",
+            "delivered_at": "2026-02-04T15:10",
+            "completed_at": "2026-02-08T15:10",
+            "eligible_for_return_until": "2026-02-19",
+            "can_return_now": false,
+            "returnable_items_count": 2,
+            "subtotal": 2250410,
+            "shipping_fee": 36592,
+            "discount_amount": 125364,
+            "final_total": 2161638,
+            "voucher_code": null,
+            "is_split_order": false,
+            "parcel_count": 1,
+            "current_location": "Da Nang Transit Hub",
+            "latest_status_note": "Đơn hàng đã hoàn tất và không có yêu cầu xử lý thêm.",
+            "items": [
+              {
+                "product_id": "P225901",
+                "seller_sku": "SKU-2259-01",
+                "product_name": "Tai nghe Bluetooth AirBeat S5",
+                "category": "electronics",
+                "quantity": 2,
+                "unit_price": 761458,
+                "returnable": true,
+                "return_window_days": 15,
+                "fragile": false,
+                "shop_name": "FreshLife Market"
+              },
+              {
+                "product_id": "P225902",
+                "seller_sku": "SKU-2259-02",
+                "product_name": "Áo sơ mi linen UrbanForm",
+                "category": "fashion",
+                "quantity": 2,
+                "unit_price": 363747,
+                "returnable": true,
+                "return_window_days": 15,
+                "fragile": false,
+                "shop_name": "FreshLife Market"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "final_answer": "Answer: Khách hàng C001 có các đơn gần đây như trong dữ liệu: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed).\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Danh sách đơn gần đây: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed).",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Cho tôi xem danh sách đơn hàng của khách hàng C001",
+      "route": {
+        "status": "ok",
+        "needs_policy": false,
+        "needs_data": true,
+        "selected_workers": [
+          "data"
+        ],
+        "order_ids": [],
+        "customer_ids": [
+          "C001"
+        ],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_customer_by_id",
+          "args": {
+            "customer_id": "C001"
+          }
+        },
+        {
+          "tool": "get_orders_by_customer_id",
+          "args": {
+            "customer_id": "C001",
+            "limit": 10
+          }
+        }
+      ],
+      "result_status": "ok",
+      "facts": [
+        "Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6.",
+        "Danh sách đơn gần đây: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed)."
+      ],
+      "not_found_entities": []
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Khách hàng C001 có các đơn gần đây như trong dữ liệu: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed).\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Danh sách đơn gần đây: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed)."
+    }
+  ]
+}

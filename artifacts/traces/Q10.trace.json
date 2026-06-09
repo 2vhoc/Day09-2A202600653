@@ -1,0 +1,144 @@
+{
+  "question": "Đơn hàng 2058 đang ở trạng thái nào?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": false,
+    "needs_data": true,
+    "selected_workers": [
+      "data"
+    ],
+    "order_ids": [
+      "2058"
+    ],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {},
+  "data_result": {
+    "status": "ok",
+    "facts": [
+      "Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "2058"
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "ok",
+        "order": {
+          "order_id": "2058",
+          "customer_id": "C014",
+          "customer_name": "Võ Thanh Quân",
+          "order_status": "delivered",
+          "payment_method": "credit_card",
+          "payment_status": "paid",
+          "shipping_method": "standard",
+          "carrier": "Giao Hang Nhanh",
+          "tracking_number": "VN2058450091",
+          "warehouse_city": "Ha Noi",
+          "destination_city": "Ha Noi",
+          "destination_district": "Dong Da",
+          "created_at": "2026-05-29T09:20",
+          "packed_at": "2026-05-29T14:10",
+          "handed_over_at": "2026-05-30T08:30",
+          "estimated_delivery": "2026-06-02",
+          "delivered_at": "2026-06-01T17:10",
+          "completed_at": null,
+          "eligible_for_return_until": "2026-06-16",
+          "can_return_now": true,
+          "returnable_items_count": 2,
+          "subtotal": 1465000,
+          "shipping_fee": 32000,
+          "discount_amount": 150000,
+          "final_total": 1347000,
+          "voucher_code": "PLATFORM-15-2058",
+          "is_split_order": true,
+          "parcel_count": 2,
+          "current_location": "Delivered",
+          "latest_status_note": "Đơn đã giao thành công và vẫn còn trong thời gian hỗ trợ trả hàng.",
+          "items": [
+            {
+              "product_id": "P205801",
+              "seller_sku": "SKU-2058-01",
+              "product_name": "Tai nghe Bluetooth AirBeat S5",
+              "category": "electronics",
+              "quantity": 1,
+              "unit_price": 760000,
+              "returnable": true,
+              "return_window_days": 15,
+              "fragile": false,
+              "shop_name": "TechHub Official"
+            },
+            {
+              "product_id": "P205802",
+              "seller_sku": "SKU-2058-02",
+              "product_name": "Sạc nhanh 65W NovaCharge",
+              "category": "electronics",
+              "quantity": 1,
+              "unit_price": 705000,
+              "returnable": true,
+              "return_window_days": 15,
+              "fragile": false,
+              "shop_name": "TechHub Official"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "final_answer": "Answer: Đơn hàng 2058 đang ở trạng thái delivered. Ghi chú mới nhất: Đơn đã giao thành công và vẫn còn trong thời gian hỗ trợ trả hàng.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Đơn hàng 2058 đang ở trạng thái nào?",
+      "route": {
+        "status": "ok",
+        "needs_policy": false,
+        "needs_data": true,
+        "selected_workers": [
+          "data"
+        ],
+        "order_ids": [
+          "2058"
+        ],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_order_detail_by_order_id",
+          "args": {
+            "order_id": "2058"
+          }
+        }
+      ],
+      "result_status": "ok",
+      "facts": [
+        "Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+      ],
+      "not_found_entities": []
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Đơn hàng 2058 đang ở trạng thái delivered. Ghi chú mới nhất: Đơn đã giao thành công và vẫn còn trong thời gian hỗ trợ trả hàng.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    }
+  ]
+}

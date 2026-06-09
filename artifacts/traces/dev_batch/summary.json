@@ -1,0 +1,339 @@
+{
+  "total": 22,
+  "route_matches": 22,
+  "status_matches": 22,
+  "results": [
+    {
+      "id": "Q01",
+      "question": "Chính sách hoàn trả hàng ra sao?",
+      "expected_route": [
+        "policy"
+      ],
+      "actual_route": [
+        "policy"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    },
+    {
+      "id": "Q02",
+      "question": "Giao hàng tiêu chuẩn thường mất bao lâu?",
+      "expected_route": [
+        "policy"
+      ],
+      "actual_route": [
+        "policy"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến; 3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền; 4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận; 4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    },
+    {
+      "id": "Q03",
+      "question": "Khách có được kiểm hàng khi nhận không?",
+      "expected_route": [
+        "policy"
+      ],
+      "actual_route": [
+        "policy"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Khách được kiểm tra ngoại quan gói hàng khi nhận; việc dùng thử sâu, lắp đặt hoặc sử dụng lâu dài không thuộc phạm vi kiểm hàng tại chỗ.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận; 4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện; 4. Chính sách giao hàng > 4.7. Giao hàng không thành công; 7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    },
+    {
+      "id": "Q04",
+      "question": "Voucher có được hoàn lại khi hủy đơn không?",
+      "expected_route": [
+        "policy"
+      ],
+      "actual_route": [
+        "policy"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Voucher có thể được hoàn lại khi đơn bị hủy nếu còn hiệu lực, chưa vượt giới hạn sử dụng, toàn bộ phần dùng voucher bị hủy và không thuộc nhóm chiến dịch loại trừ.\nEvidence:\n- Policy: 6. Chính sách voucher và khuyến mãi > 6.5. Hoàn lại voucher khi đơn bị hủy; 6. Chính sách voucher và khuyến mãi > 6.6. Voucher sau trả hàng / hoàn tiền; 6. Chính sách voucher và khuyến mãi > 6.7. Thu hồi voucher và chống gian lận; 6. Chính sách voucher và khuyến mãi > 6.4. Giới hạn voucher theo hạng khách hàng\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    },
+    {
+      "id": "Q05",
+      "question": "Các trường hợp nào thường không hỗ trợ trả hàng?",
+      "expected_route": [
+        "policy"
+      ],
+      "actual_route": [
+        "policy"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường. Một số trường hợp thường không hỗ trợ trả hàng gồm hàng đã mở niêm phong, thực phẩm tươi sống, đồ cá nhân đã qua sử dụng, mã điện tử, hàng cá nhân hóa hoặc sản phẩm hỏng do dùng sai hướng dẫn.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    },
+    {
+      "id": "Q06",
+      "question": "Đơn hàng 1971 bao giờ được giao?",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 1971 đang ở trạng thái in_transit. Dự kiến giao ngày 2026-06-09; ghi chú mới nhất: Đơn hàng đang trên đường giao, dự kiến giao trong ngày 2026-06-09.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    },
+    {
+      "id": "Q07",
+      "question": "Cho tôi xem danh sách đơn hàng của khách hàng C001",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Khách hàng C001 có các đơn gần đây như trong dữ liệu: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed).\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Danh sách đơn gần đây: 1971(in_transit), 1901(completed), 2160(in_transit), 2259(completed)."
+    },
+    {
+      "id": "Q08",
+      "question": "Voucher của khách hàng C001 còn những mã nào dùng được?",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Khách hàng C001 thuộc hạng Gold và còn quota voucher tháng này là 6/10. Voucher phù hợp: C001-BDAY-0626(active, còn 1 lượt).\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Voucher còn dùng được: C001-BDAY-0626(active, còn 1 lượt)."
+    },
+    {
+      "id": "Q09",
+      "question": "Khách hàng C001 thuộc hạng gì và còn quota voucher bao nhiêu?",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Khách hàng C001 thuộc hạng Gold. Tối đa dùng 10 voucher mỗi tháng, đã dùng 4 và còn 6 quota voucher trong tháng này.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Voucher còn dùng được: C001-BDAY-0626(active, còn 1 lượt)."
+    },
+    {
+      "id": "Q10",
+      "question": "Đơn hàng 2058 đang ở trạng thái nào?",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 2058 đang ở trạng thái delivered. Ghi chú mới nhất: Đơn đã giao thành công và vẫn còn trong thời gian hỗ trợ trả hàng.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    },
+    {
+      "id": "Q11",
+      "question": "Đơn hàng 1971 có được hoàn trả không?",
+      "expected_route": [
+        "data",
+        "policy"
+      ],
+      "actual_route": [
+        "policy",
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 1971 chưa thể hoàn trả theo quy trình trả hàng thông thường vì đơn vẫn đang in_transit và chưa giao thành công. Policy tính cửa sổ trả hàng từ lúc đơn delivered; hiện dữ liệu đơn cũng ghi can_return_now=False.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    },
+    {
+      "id": "Q12",
+      "question": "Đơn hàng 2058 còn trong thời gian trả hàng không?",
+      "expected_route": [
+        "data",
+        "policy"
+      ],
+      "actual_route": [
+        "policy",
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 2058 có thể gửi yêu cầu trả hàng ở thời điểm hiện tại. Đơn đã giao thành công, cửa sổ trả hàng còn đến 2026-06-16; policy mặc định hỗ trợ đa số ngành hàng trong tối đa 15 ngày kể từ khi giao thành công.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    },
+    {
+      "id": "Q13",
+      "question": "Đơn hàng 2058 nếu khách đổi ý thì có thể trả trong bao lâu?",
+      "expected_route": [
+        "data",
+        "policy"
+      ],
+      "actual_route": [
+        "policy",
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 2058 có thể gửi yêu cầu trả hàng ở thời điểm hiện tại. Đơn đã giao thành công, cửa sổ trả hàng còn đến 2026-06-16; policy mặc định hỗ trợ đa số ngành hàng trong tối đa 15 ngày kể từ khi giao thành công.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp; 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    },
+    {
+      "id": "Q14",
+      "question": "Đơn hàng 1971 đang giao thì nên trả hàng hay từ chối nhận?",
+      "expected_route": [
+        "data",
+        "policy"
+      ],
+      "actual_route": [
+        "policy",
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 1971 đang trên đường giao nên chưa thể bắt đầu quy trình trả hàng thông thường. Theo policy, đơn in_transit có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng chưa được xem là trả hàng sau bán.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    },
+    {
+      "id": "Q15",
+      "question": "Voucher của tôi còn dùng được không?",
+      "expected_route": [],
+      "actual_route": [],
+      "route_match": true,
+      "expected_status": "clarification_needed",
+      "actual_status": "clarification_needed",
+      "status_match": true,
+      "final_answer": "Status: clarification_needed\nQuestion: Anh/chị vui lòng cung cấp mã khách hàng để em kiểm tra voucher chính xác."
+    },
+    {
+      "id": "Q16",
+      "question": "Đơn hàng của tôi có được hoàn trả không?",
+      "expected_route": [],
+      "actual_route": [],
+      "route_match": true,
+      "expected_status": "clarification_needed",
+      "actual_status": "clarification_needed",
+      "status_match": true,
+      "final_answer": "Status: clarification_needed\nQuestion: Anh/chị vui lòng cung cấp mã đơn hàng để em kiểm tra chính xác."
+    },
+    {
+      "id": "Q17",
+      "question": "Kiểm tra đơn hàng 9999 giúp tôi",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "not_found",
+      "actual_status": "not_found",
+      "status_match": true,
+      "final_answer": "Status: not_found\nMessage: Không tìm thấy dữ liệu cho order 9999."
+    },
+    {
+      "id": "Q18",
+      "question": "Cho tôi xem voucher của khách hàng C999",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "not_found",
+      "actual_status": "not_found",
+      "status_match": true,
+      "final_answer": "Status: not_found\nMessage: Không tìm thấy dữ liệu cho customer C999."
+    },
+    {
+      "id": "Q19",
+      "question": "Customer C014 có những đơn nào gần đây?",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Khách hàng C014 có các đơn gần đây như trong dữ liệu: 2058(delivered), 2230(packed), 2218(packed), 2212(in_transit), 1914(completed), 2141(delivered), 2132(in_transit).\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C014 (Võ Thanh Quân) hạng Standard, max_voucher_per_month=6, vouchers_used_this_month=5, remaining_voucher_quota_this_month=1. Danh sách đơn gần đây: 2058(delivered), 2230(packed), 2218(packed), 2212(in_transit), 1914(completed), 2141(delivered), 2132(in_transit)."
+    },
+    {
+      "id": "Q20",
+      "question": "Phương thức giao nhanh có thể bị chuyển sang giao tiêu chuẩn khi nào?",
+      "expected_route": [
+        "policy"
+      ],
+      "actual_route": [
+        "policy"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa. Đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu shop bàn giao chậm, sản phẩm vượt ngưỡng kích thước/khối lượng, hoặc có rủi ro vận hành từ đơn vị vận chuyển.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến; 4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên; 4. Chính sách giao hàng > 4.1. Phương thức giao hàng; 3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    },
+    {
+      "id": "Q21",
+      "question": "Khách hàng C001 tối đa dùng bao nhiêu voucher mỗi tháng?",
+      "expected_route": [
+        "data"
+      ],
+      "actual_route": [
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Khách hàng C001 thuộc hạng Gold. Tối đa dùng 10 voucher mỗi tháng, đã dùng 4 và còn 6 quota voucher trong tháng này.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Voucher của khách hàng: SHO-C001-01(used, còn 0 lượt), SHO-C001-02(expired, còn 0 lượt), PLA-C001-03(used, còn 0 lượt), PLAT-FS-0626-C001(used, còn 0 lượt), C001-BDAY-0626(active, còn 1 lượt)."
+    },
+    {
+      "id": "Q22",
+      "question": "Đơn hàng 2058 có liên quan gì đến cửa sổ trả hàng 15 ngày trong policy không?",
+      "expected_route": [
+        "data",
+        "policy"
+      ],
+      "actual_route": [
+        "policy",
+        "data"
+      ],
+      "route_match": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "status_match": true,
+      "final_answer": "Answer: Đơn hàng 2058 có thể gửi yêu cầu trả hàng ở thời điểm hiện tại. Đơn đã giao thành công, cửa sổ trả hàng còn đến 2026-06-16; policy mặc định hỗ trợ đa số ngành hàng trong tối đa 15 ngày kể từ khi giao thành công.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    }
+  ]
+}

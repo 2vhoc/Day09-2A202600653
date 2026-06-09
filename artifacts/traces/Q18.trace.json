@@ -1,0 +1,95 @@
+{
+  "question": "Cho tôi xem voucher của khách hàng C999",
+  "status": "not_found",
+  "route": {
+    "status": "ok",
+    "needs_policy": false,
+    "needs_data": true,
+    "selected_workers": [
+      "data"
+    ],
+    "order_ids": [],
+    "customer_ids": [
+      "C999"
+    ],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {},
+  "data_result": {
+    "status": "not_found",
+    "facts": [],
+    "not_found_entities": [
+      {
+        "entity": "customer",
+        "id": "C999"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_customer_by_id",
+        "args": {
+          "customer_id": "C999"
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "not_found",
+        "entity": "customer",
+        "customer_id": "C999"
+      }
+    ]
+  },
+  "final_answer": "Status: not_found\nMessage: Không tìm thấy dữ liệu cho customer C999.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Cho tôi xem voucher của khách hàng C999",
+      "route": {
+        "status": "ok",
+        "needs_policy": false,
+        "needs_data": true,
+        "selected_workers": [
+          "data"
+        ],
+        "order_ids": [],
+        "customer_ids": [
+          "C999"
+        ],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_customer_by_id",
+          "args": {
+            "customer_id": "C999"
+          }
+        }
+      ],
+      "result_status": "not_found",
+      "facts": [],
+      "not_found_entities": [
+        {
+          "entity": "customer",
+          "id": "C999"
+        }
+      ]
+    },
+    {
+      "node": "worker_3_response",
+      "status": "not_found",
+      "final_answer": "Status: not_found\nMessage: Không tìm thấy dữ liệu cho customer C999."
+    }
+  ]
+}

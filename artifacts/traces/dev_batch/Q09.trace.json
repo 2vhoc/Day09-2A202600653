@@ -1,0 +1,170 @@
+{
+  "question": "Khách hàng C001 thuộc hạng gì và còn quota voucher bao nhiêu?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": false,
+    "needs_data": true,
+    "selected_workers": [
+      "data"
+    ],
+    "order_ids": [],
+    "customer_ids": [
+      "C001"
+    ],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "status": "ok",
+      "needs_policy": false,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  "policy_result": {},
+  "data_result": {
+    "status": "ok",
+    "facts": [
+      "Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6.",
+      "Voucher còn dùng được: C001-BDAY-0626(active, còn 1 lượt)."
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_customer_by_id",
+        "args": {
+          "customer_id": "C001"
+        }
+      },
+      {
+        "tool": "get_vouchers_by_customer_id",
+        "args": {
+          "customer_id": "C001",
+          "only_active": true
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "ok",
+        "customer": {
+          "customer_id": "C001",
+          "customer_name": "Nguyen Thu Anh",
+          "gender": "female",
+          "tier": "Gold",
+          "max_voucher_per_month": 10,
+          "vouchers_used_this_month": 4,
+          "remaining_voucher_quota_this_month": 6,
+          "email": "nguyen.thu.anh01@example.com",
+          "phone": "0901234567",
+          "city": "Ho Chi Minh",
+          "district": "Binh Thanh",
+          "joined_at": "2024-02-05T14:35",
+          "loyalty_points": 2416,
+          "preferred_categories": [
+            "fashion",
+            "beauty",
+            "home"
+          ],
+          "support_flags": [
+            "frequent_buyer"
+          ],
+          "default_address": {
+            "line1": "128 Nguyen Gia Tri",
+            "district": "Binh Thanh",
+            "city": "Ho Chi Minh",
+            "country": "VN"
+          },
+          "account_status": "active",
+          "total_orders": 4,
+          "total_spent": 4675941,
+          "latest_order_id": "2259"
+        }
+      },
+      {
+        "status": "ok",
+        "customer_id": "C001",
+        "only_active": true,
+        "count": 1,
+        "vouchers": [
+          {
+            "voucher_code": "C001-BDAY-0626",
+            "customer_id": "C001",
+            "voucher_type": "platform",
+            "title": "Voucher sinh nhật khách hàng C001",
+            "discount_type": "fixed",
+            "discount_value": 50000,
+            "min_order_value": 399000,
+            "max_discount": 50000,
+            "start_at": "2026-06-01T00:00",
+            "end_at": "2026-06-30T23:59",
+            "status": "active",
+            "remaining_uses": 1,
+            "stackable_with": [
+              "shop",
+              "shipping"
+            ],
+            "source": "birthday_reward",
+            "assigned_order_id": null,
+            "restored_after_cancellation": false
+          }
+        ]
+      }
+    ]
+  },
+  "final_answer": "Answer: Khách hàng C001 thuộc hạng Gold. Tối đa dùng 10 voucher mỗi tháng, đã dùng 4 và còn 6 quota voucher trong tháng này.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Voucher còn dùng được: C001-BDAY-0626(active, còn 1 lượt).",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Khách hàng C001 thuộc hạng gì và còn quota voucher bao nhiêu?",
+      "route": {
+        "status": "ok",
+        "needs_policy": false,
+        "needs_data": true,
+        "selected_workers": [
+          "data"
+        ],
+        "order_ids": [],
+        "customer_ids": [
+          "C001"
+        ],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "status": "ok",
+          "needs_policy": false,
+          "needs_data": true,
+          "clarification_question": null
+        }
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_customer_by_id",
+          "args": {
+            "customer_id": "C001"
+          }
+        },
+        {
+          "tool": "get_vouchers_by_customer_id",
+          "args": {
+            "customer_id": "C001",
+            "only_active": true
+          }
+        }
+      ],
+      "result_status": "ok",
+      "facts": [
+        "Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6.",
+        "Voucher còn dùng được: C001-BDAY-0626(active, còn 1 lượt)."
+      ],
+      "not_found_entities": []
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Khách hàng C001 thuộc hạng Gold. Tối đa dùng 10 voucher mỗi tháng, đã dùng 4 và còn 6 quota voucher trong tháng này.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Khách hàng C001 (Nguyen Thu Anh) hạng Gold, max_voucher_per_month=10, vouchers_used_this_month=4, remaining_voucher_quota_this_month=6. Voucher còn dùng được: C001-BDAY-0626(active, còn 1 lượt)."
+    }
+  ]
+}

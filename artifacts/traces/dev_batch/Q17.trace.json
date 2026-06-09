@@ -1,0 +1,101 @@
+{
+  "question": "Kiểm tra đơn hàng 9999 giúp tôi",
+  "status": "not_found",
+  "route": {
+    "status": "ok",
+    "needs_policy": false,
+    "needs_data": true,
+    "selected_workers": [
+      "data"
+    ],
+    "order_ids": [
+      "9999"
+    ],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "status": "ok",
+      "needs_policy": false,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  "policy_result": {},
+  "data_result": {
+    "status": "not_found",
+    "facts": [],
+    "not_found_entities": [
+      {
+        "entity": "order",
+        "id": "9999"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "9999"
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "not_found",
+        "entity": "order",
+        "order_id": "9999"
+      }
+    ]
+  },
+  "final_answer": "Status: not_found\nMessage: Không tìm thấy dữ liệu cho order 9999.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Kiểm tra đơn hàng 9999 giúp tôi",
+      "route": {
+        "status": "ok",
+        "needs_policy": false,
+        "needs_data": true,
+        "selected_workers": [
+          "data"
+        ],
+        "order_ids": [
+          "9999"
+        ],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "status": "ok",
+          "needs_policy": false,
+          "needs_data": true,
+          "clarification_question": null
+        }
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_order_detail_by_order_id",
+          "args": {
+            "order_id": "9999"
+          }
+        }
+      ],
+      "result_status": "not_found",
+      "facts": [],
+      "not_found_entities": [
+        {
+          "entity": "order",
+          "id": "9999"
+        }
+      ]
+    },
+    {
+      "node": "worker_3_response",
+      "status": "not_found",
+      "final_answer": "Status: not_found\nMessage: Không tìm thấy dữ liệu cho order 9999."
+    }
+  ]
+}

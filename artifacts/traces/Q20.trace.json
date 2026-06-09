@@ -1,0 +1,164 @@
+{
+  "question": "Phương thức giao nhanh có thể bị chuyển sang giao tiêu chuẩn khi nào?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": true,
+    "needs_data": false,
+    "selected_workers": [
+      "policy"
+    ],
+    "order_ids": [],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {
+    "status": "ok",
+    "query": "Phương thức giao nhanh có thể bị chuyển sang giao tiêu chuẩn khi nào?\n4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến 4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+    "summary": "Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa. Đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu shop bàn giao chậm, sản phẩm vượt ngưỡng kích thước/khối lượng, hoặc có rủi ro vận hành từ đơn vị vận chuyển.",
+    "facts": [
+      "Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa.",
+      "Đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu shop bàn giao chậm, sản phẩm vượt ngưỡng kích thước/khối lượng, hoặc có rủi ro vận hành từ đơn vị vận chuyển."
+    ],
+    "citations": [
+      "4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến",
+      "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+      "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+      "3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền",
+      "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+      "4. Chính sách giao hàng > 4.2. Thời gian xử lý đơn",
+      "3. Thuật ngữ > 3.2. Giao hàng thành công"
+    ],
+    "hits": [
+      {
+        "id": "policy_chunk_0009",
+        "citation": "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.4. Giao hàng nhanh và giao ưu tiên",
+        "content": "Đối với đơn đủ điều kiện giao nhanh hoặc giao ưu tiên:\n\n- khách cần đặt trong khung giờ hệ thống hỗ trợ\n- địa chỉ nhận phải nằm trong vùng phục vụ\n- sản phẩm không thuộc danh mục hạn chế vận chuyển\n\nCác đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu:\n\n- shop bàn giao hàng chậm\n- sản phẩm vượt ngưỡng kích thước hoặc khối lượng cho phép\n- phát sinh rủi ro vận hành từ đơn vị vận chuyển",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.4. Giao hàng nhanh và giao ưu tiên\n\nĐối với đơn đủ điều kiện giao nhanh hoặc giao ưu tiên:\n\n- khách cần đặt trong khung giờ hệ thống hỗ trợ\n- địa chỉ nhận phải nằm trong vùng phục vụ\n- sản phẩm không thuộc danh mục hạn chế vận chuyển\n\nCác đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu:\n\n- shop bàn giao hàng chậm\n- sản phẩm vượt ngưỡng kích thước hoặc khối lượng cho phép\n- phát sinh rủi ro vận hành từ đơn vị vận chuyển",
+        "distance": 0.20435762405395508
+      },
+      {
+        "id": "policy_chunk_0006",
+        "citation": "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.1. Phương thức giao hàng",
+        "content": "VinShop Demo hỗ trợ các hình thức giao hàng sau:\n\n- `standard`: giao hàng tiêu chuẩn toàn quốc\n- `fast`: giao nhanh nội thành hoặc liên tỉnh ngắn\n- `express`: giao ưu tiên cho sản phẩm đủ điều kiện\n- `scheduled`: giao theo khung giờ hẹn trước tại một số khu vực\n\nKhông phải mọi sản phẩm đều hỗ trợ tất cả phương thức giao hàng. Hệ thống sẽ chỉ hiển thị các phương thức phù hợp dựa trên:\n\n- địa chỉ nhận hàng\n- kích thước và khối lượng gói hàng\n- điều kiện đóng gói của nhà bán\n- đặc thù sản phẩm như dễ vỡ, hàng giá trị cao, hàng cồng kềnh hoặc hàng cần bảo quản đặc biệt",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.1. Phương thức giao hàng\n\nVinShop Demo hỗ trợ các hình thức giao hàng sau:\n\n- `standard`: giao hàng tiêu chuẩn toàn quốc\n- `fast`: giao nhanh nội thành hoặc liên tỉnh ngắn\n- `express`: giao ưu tiên cho sản phẩm đủ điều kiện\n- `scheduled`: giao theo khung giờ hẹn trước tại một số khu vực\n\nKhông phải mọi sản phẩm đều hỗ trợ tất cả phương thức giao hàng. Hệ thống sẽ chỉ hiển thị các phương thức phù hợp dựa trên:\n\n- địa chỉ nhận hàng\n- kích thước và khối lượng gói hàng\n- điều kiện đóng gói của nhà bán\n- đặc thù sản phẩm như dễ vỡ, hàng giá trị cao, hàng cồng kềnh hoặc hàng cần bảo quản đặc biệt",
+        "distance": 0.2422197461128235
+      },
+      {
+        "id": "policy_chunk_0002",
+        "citation": "3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền",
+        "section_h2": "3. Thuật ngữ",
+        "section_h3": "3.3. Yêu cầu trả hàng / hoàn tiền",
+        "content": "Là yêu cầu do khách hàng khởi tạo sau khi đơn hàng đã phát sinh vấn đề như:\n\n- giao sai sản phẩm\n- thiếu hàng\n- hàng lỗi, vỡ, hư hỏng\n- hàng không đúng mô tả\n- nghi ngờ hàng giả hoặc sai thương hiệu\n- đơn đã giao nhưng khách có nhu cầu đổi ý trong phạm vi cho phép",
+        "rendered_text": "## 3. Thuật ngữ\n\n### 3.3. Yêu cầu trả hàng / hoàn tiền\n\nLà yêu cầu do khách hàng khởi tạo sau khi đơn hàng đã phát sinh vấn đề như:\n\n- giao sai sản phẩm\n- thiếu hàng\n- hàng lỗi, vỡ, hư hỏng\n- hàng không đúng mô tả\n- nghi ngờ hàng giả hoặc sai thương hiệu\n- đơn đã giao nhưng khách có nhu cầu đổi ý trong phạm vi cho phép",
+        "distance": 0.2641925811767578
+      },
+      {
+        "id": "policy_chunk_0011",
+        "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.6. Kiểm hàng khi nhận",
+        "content": "Khách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.6. Kiểm hàng khi nhận\n\nKhách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "distance": 0.26615118980407715
+      },
+      {
+        "id": "policy_chunk_0007",
+        "citation": "4. Chính sách giao hàng > 4.2. Thời gian xử lý đơn",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.2. Thời gian xử lý đơn",
+        "content": "Sau khi khách đặt hàng thành công, nhà bán hoặc kho vận hành sẽ cần một khoảng thời gian để:\n\n- xác nhận tồn kho\n- đóng gói\n- in vận đơn\n- bàn giao cho đơn vị vận chuyển\n\nThời gian xử lý thông thường:\n\n- đơn tiêu chuẩn: từ 4 đến 24 giờ làm việc\n- đơn giao nhanh: từ 1 đến 6 giờ làm việc nếu đặt trong khung giờ hỗ trợ\n- đơn có nhiều kiện hoặc nhiều shop: có thể tách thành nhiều gói và xử lý độc lập",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.2. Thời gian xử lý đơn\n\nSau khi khách đặt hàng thành công, nhà bán hoặc kho vận hành sẽ cần một khoảng thời gian để:\n\n- xác nhận tồn kho\n- đóng gói\n- in vận đơn\n- bàn giao cho đơn vị vận chuyển\n\nThời gian xử lý thông thường:\n\n- đơn tiêu chuẩn: từ 4 đến 24 giờ làm việc\n- đơn giao nhanh: từ 1 đến 6 giờ làm việc nếu đặt trong khung giờ hỗ trợ\n- đơn có nhiều kiện hoặc nhiều shop: có thể tách thành nhiều gói và xử lý độc lập",
+        "distance": 0.3333333333333333
+      },
+      {
+        "id": "policy_chunk_0001",
+        "citation": "3. Thuật ngữ > 3.2. Giao hàng thành công",
+        "section_h2": "3. Thuật ngữ",
+        "section_h3": "3.2. Giao hàng thành công",
+        "content": "Đơn được xem là giao hàng thành công khi hệ thống vận chuyển cập nhật trạng thái `delivered` hoặc tương đương, và hàng hóa đã tới đúng địa chỉ hoặc đúng người nhận được ủy quyền.",
+        "rendered_text": "## 3. Thuật ngữ\n\n### 3.2. Giao hàng thành công\n\nĐơn được xem là giao hàng thành công khi hệ thống vận chuyển cập nhật trạng thái `delivered` hoặc tương đương, và hàng hóa đã tới đúng địa chỉ hoặc đúng người nhận được ủy quyền.",
+        "distance": 0.5
+      }
+    ]
+  },
+  "data_result": {},
+  "final_answer": "Answer: Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa. Đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu shop bàn giao chậm, sản phẩm vượt ngưỡng kích thước/khối lượng, hoặc có rủi ro vận hành từ đơn vị vận chuyển.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến; 4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên; 4. Chính sách giao hàng > 4.1. Phương thức giao hàng; 3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Phương thức giao nhanh có thể bị chuyển sang giao tiêu chuẩn khi nào?",
+      "route": {
+        "status": "ok",
+        "needs_policy": true,
+        "needs_data": false,
+        "selected_workers": [
+          "policy"
+        ],
+        "order_ids": [],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_1_policy",
+      "tool": "search_policy",
+      "query": "Phương thức giao nhanh có thể bị chuyển sang giao tiêu chuẩn khi nào?\n4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến 4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+      "hits": [
+        {
+          "citation": "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+          "distance": 0.20435762405395508
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+          "distance": 0.2422197461128235
+        },
+        {
+          "citation": "3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền",
+          "distance": 0.2641925811767578
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+          "distance": 0.26615118980407715
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.2. Thời gian xử lý đơn",
+          "distance": 0.3333333333333333
+        },
+        {
+          "citation": "3. Thuật ngữ > 3.2. Giao hàng thành công",
+          "distance": 0.5
+        }
+      ],
+      "result": {
+        "summary": "Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa. Đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu shop bàn giao chậm, sản phẩm vượt ngưỡng kích thước/khối lượng, hoặc có rủi ro vận hành từ đơn vị vận chuyển.",
+        "citations": [
+          "4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến",
+          "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+          "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+          "3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền",
+          "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+          "4. Chính sách giao hàng > 4.2. Thời gian xử lý đơn",
+          "3. Thuật ngữ > 3.2. Giao hàng thành công"
+        ]
+      }
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Giao hàng tiêu chuẩn thường mất 1-2 ngày trong nội thành, 2-4 ngày liên tỉnh lân cận, và 3-7 ngày với tuyến huyện/xã hoặc khu vực xa. Đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu shop bàn giao chậm, sản phẩm vượt ngưỡng kích thước/khối lượng, hoặc có rủi ro vận hành từ đơn vị vận chuyển.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến; 4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên; 4. Chính sách giao hàng > 4.1. Phương thức giao hàng; 3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    }
+  ]
+}

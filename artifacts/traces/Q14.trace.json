@@ -1,0 +1,248 @@
+{
+  "question": "Đơn hàng 1971 đang giao thì nên trả hàng hay từ chối nhận?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": true,
+    "needs_data": true,
+    "selected_workers": [
+      "policy",
+      "data"
+    ],
+    "order_ids": [
+      "1971"
+    ],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {
+    "status": "ok",
+    "query": "Đơn hàng 1971 đang giao thì nên trả hàng hay từ chối nhận?\n5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+    "summary": "Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.",
+    "facts": [
+      "Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công.",
+      "Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường."
+    ],
+    "citations": [
+      "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+      "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+      "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+      "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+      "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+      "4. Chính sách giao hàng > 4.1. Phương thức giao hàng"
+    ],
+    "hits": [
+      {
+        "id": "policy_chunk_0022",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "content": "Trong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng\n\nTrong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "distance": 0.18472826480865479
+      },
+      {
+        "id": "policy_chunk_0021",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.9. Hoàn tiền",
+        "content": "Tiền hoàn có thể được trả về:\n\n- ví nội bộ của nền tảng\n- tài khoản ngân hàng\n- thẻ thanh toán\n- phương thức thanh toán gốc nếu hạ tầng thanh toán hỗ trợ\n\nThời gian nhận tiền thực tế có thể phụ thuộc:\n\n- cổng thanh toán\n- ngân hàng phát hành\n- trạng thái đối soát\n- việc xác minh chứng từ của bộ phận vận hành",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.9. Hoàn tiền\n\nTiền hoàn có thể được trả về:\n\n- ví nội bộ của nền tảng\n- tài khoản ngân hàng\n- thẻ thanh toán\n- phương thức thanh toán gốc nếu hạ tầng thanh toán hỗ trợ\n\nThời gian nhận tiền thực tế có thể phụ thuộc:\n\n- cổng thanh toán\n- ngân hàng phát hành\n- trạng thái đối soát\n- việc xác minh chứng từ của bộ phận vận hành",
+        "distance": 0.20145493745803833
+      },
+      {
+        "id": "policy_chunk_0013",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.1. Điều kiện chung để gửi yêu cầu",
+        "content": "Khách hàng có thể gửi yêu cầu trả hàng / hoàn tiền khi có căn cứ hợp lý và còn trong thời hạn hỗ trợ của hệ thống.\n\nTrong bộ mock policy này, thời hạn mặc định là:\n\n- tối đa **15 ngày kể từ khi đơn cập nhật giao hàng thành công** đối với đa số ngành hàng thông thường\n- tối đa **3 ngày** đối với hàng tiêu dùng nhanh, mỹ phẩm dùng thử, thực phẩm hoặc sản phẩm có rủi ro vệ sinh cao\n- tối đa **24 giờ** đối với hàng tươi sống hoặc hàng có điều kiện bảo quản đặc biệt\n\nThời hạn cụ thể có thể được ghi đè ở dữ liệu sản phẩm hoặc dữ liệu đơn hàng bằng các trường như:\n\n- `return_window_days`\n- `returnable`\n- `eligible_for_return_until`",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.1. Điều kiện chung để gửi yêu cầu\n\nKhách hàng có thể gửi yêu cầu trả hàng / hoàn tiền khi có căn cứ hợp lý và còn trong thời hạn hỗ trợ của hệ thống.\n\nTrong bộ mock policy này, thời hạn mặc định là:\n\n- tối đa **15 ngày kể từ khi đơn cập nhật giao hàng thành công** đối với đa số ngành hàng thông thường\n- tối đa **3 ngày** đối với hàng tiêu dùng nhanh, mỹ phẩm dùng thử, thực phẩm hoặc sản phẩm có rủi ro vệ sinh cao\n- tối đa **24 giờ** đối với hàng tươi sống hoặc hàng có điều kiện bảo quản đặc biệt\n\nThời hạn cụ thể có thể được ghi đè ở dữ liệu sản phẩm hoặc dữ liệu đơn hàng bằng các trường như:\n\n- `return_window_days`\n- `returnable`\n- `eligible_for_return_until`",
+        "distance": 0.20867741107940674
+      },
+      {
+        "id": "policy_chunk_0016",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.4. Bằng chứng cần cung cấp",
+        "content": "Khi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.4. Bằng chứng cần cung cấp\n\nKhi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "distance": 0.21515631675720215
+      },
+      {
+        "id": "policy_chunk_0009",
+        "citation": "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.4. Giao hàng nhanh và giao ưu tiên",
+        "content": "Đối với đơn đủ điều kiện giao nhanh hoặc giao ưu tiên:\n\n- khách cần đặt trong khung giờ hệ thống hỗ trợ\n- địa chỉ nhận phải nằm trong vùng phục vụ\n- sản phẩm không thuộc danh mục hạn chế vận chuyển\n\nCác đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu:\n\n- shop bàn giao hàng chậm\n- sản phẩm vượt ngưỡng kích thước hoặc khối lượng cho phép\n- phát sinh rủi ro vận hành từ đơn vị vận chuyển",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.4. Giao hàng nhanh và giao ưu tiên\n\nĐối với đơn đủ điều kiện giao nhanh hoặc giao ưu tiên:\n\n- khách cần đặt trong khung giờ hệ thống hỗ trợ\n- địa chỉ nhận phải nằm trong vùng phục vụ\n- sản phẩm không thuộc danh mục hạn chế vận chuyển\n\nCác đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu:\n\n- shop bàn giao hàng chậm\n- sản phẩm vượt ngưỡng kích thước hoặc khối lượng cho phép\n- phát sinh rủi ro vận hành từ đơn vị vận chuyển",
+        "distance": 0.2
+      },
+      {
+        "id": "policy_chunk_0006",
+        "citation": "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.1. Phương thức giao hàng",
+        "content": "VinShop Demo hỗ trợ các hình thức giao hàng sau:\n\n- `standard`: giao hàng tiêu chuẩn toàn quốc\n- `fast`: giao nhanh nội thành hoặc liên tỉnh ngắn\n- `express`: giao ưu tiên cho sản phẩm đủ điều kiện\n- `scheduled`: giao theo khung giờ hẹn trước tại một số khu vực\n\nKhông phải mọi sản phẩm đều hỗ trợ tất cả phương thức giao hàng. Hệ thống sẽ chỉ hiển thị các phương thức phù hợp dựa trên:\n\n- địa chỉ nhận hàng\n- kích thước và khối lượng gói hàng\n- điều kiện đóng gói của nhà bán\n- đặc thù sản phẩm như dễ vỡ, hàng giá trị cao, hàng cồng kềnh hoặc hàng cần bảo quản đặc biệt",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.1. Phương thức giao hàng\n\nVinShop Demo hỗ trợ các hình thức giao hàng sau:\n\n- `standard`: giao hàng tiêu chuẩn toàn quốc\n- `fast`: giao nhanh nội thành hoặc liên tỉnh ngắn\n- `express`: giao ưu tiên cho sản phẩm đủ điều kiện\n- `scheduled`: giao theo khung giờ hẹn trước tại một số khu vực\n\nKhông phải mọi sản phẩm đều hỗ trợ tất cả phương thức giao hàng. Hệ thống sẽ chỉ hiển thị các phương thức phù hợp dựa trên:\n\n- địa chỉ nhận hàng\n- kích thước và khối lượng gói hàng\n- điều kiện đóng gói của nhà bán\n- đặc thù sản phẩm như dễ vỡ, hàng giá trị cao, hàng cồng kềnh hoặc hàng cần bảo quản đặc biệt",
+        "distance": 0.25
+      }
+    ]
+  },
+  "data_result": {
+    "status": "ok",
+    "facts": [
+      "Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "1971"
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "ok",
+        "order": {
+          "order_id": "1971",
+          "customer_id": "C001",
+          "customer_name": "Nguyen Thu Anh",
+          "order_status": "in_transit",
+          "payment_method": "e_wallet",
+          "payment_status": "paid",
+          "shipping_method": "fast",
+          "carrier": "SPX Express",
+          "tracking_number": "VN1971888123",
+          "warehouse_city": "Ho Chi Minh",
+          "destination_city": "Ho Chi Minh",
+          "destination_district": "Binh Thanh",
+          "created_at": "2026-06-05T10:15",
+          "packed_at": "2026-06-05T13:40",
+          "handed_over_at": "2026-06-05T17:10",
+          "estimated_delivery": "2026-06-09",
+          "delivered_at": null,
+          "completed_at": null,
+          "eligible_for_return_until": null,
+          "can_return_now": false,
+          "returnable_items_count": 1,
+          "subtotal": 1180000,
+          "shipping_fee": 28000,
+          "discount_amount": 90000,
+          "final_total": 1118000,
+          "voucher_code": "PLAT-FS-0626-C001",
+          "is_split_order": false,
+          "parcel_count": 1,
+          "current_location": "Destination Delivery Station",
+          "latest_status_note": "Đơn hàng đang trên đường giao, dự kiến giao trong ngày 2026-06-09.",
+          "items": [
+            {
+              "product_id": "P197101",
+              "seller_sku": "SKU-1971-01",
+              "product_name": "Giày sneaker StreetGo",
+              "category": "fashion",
+              "quantity": 1,
+              "unit_price": 1180000,
+              "returnable": true,
+              "return_window_days": 15,
+              "fragile": false,
+              "shop_name": "StyleLab Fashion"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "final_answer": "Answer: Đơn hàng 1971 đang trên đường giao nên chưa thể bắt đầu quy trình trả hàng thông thường. Theo policy, đơn in_transit có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng chưa được xem là trả hàng sau bán.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Đơn hàng 1971 đang giao thì nên trả hàng hay từ chối nhận?",
+      "route": {
+        "status": "ok",
+        "needs_policy": true,
+        "needs_data": true,
+        "selected_workers": [
+          "policy",
+          "data"
+        ],
+        "order_ids": [
+          "1971"
+        ],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_1_policy",
+      "tool": "search_policy",
+      "query": "Đơn hàng 1971 đang giao thì nên trả hàng hay từ chối nhận?\n5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+      "hits": [
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+          "distance": 0.18472826480865479
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+          "distance": 0.20145493745803833
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+          "distance": 0.20867741107940674
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+          "distance": 0.21515631675720215
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+          "distance": 0.2
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+          "distance": 0.25
+        }
+      ],
+      "result": {
+        "summary": "Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.",
+        "citations": [
+          "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+          "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+          "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+          "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+          "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+          "4. Chính sách giao hàng > 4.1. Phương thức giao hàng"
+        ]
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_order_detail_by_order_id",
+          "args": {
+            "order_id": "1971"
+          }
+        }
+      ],
+      "result_status": "ok",
+      "facts": [
+        "Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+      ],
+      "not_found_entities": []
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Đơn hàng 1971 đang trên đường giao nên chưa thể bắt đầu quy trình trả hàng thông thường. Theo policy, đơn in_transit có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng chưa được xem là trả hàng sau bán.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    }
+  ]
+}

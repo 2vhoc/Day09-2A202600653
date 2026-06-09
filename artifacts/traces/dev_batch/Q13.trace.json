@@ -1,0 +1,235 @@
+{
+  "question": "Đơn hàng 2058 nếu khách đổi ý thì có thể trả trong bao lâu?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": true,
+    "needs_data": true,
+    "selected_workers": [
+      "policy",
+      "data"
+    ],
+    "order_ids": [
+      "2058"
+    ],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "status": "success",
+      "needs_policy": true,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  "policy_result": {
+    "status": "ok",
+    "query": "Đơn hàng 2058 nếu khách đổi ý thì có thể trả trong bao lâu?",
+    "summary": "Trong dữ liệu lab, sinh viên nên hiểu rõ: - đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường - đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\" - đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả - đơn `completed` vẫn có thể còn tron",
+    "facts": [
+      "Trong dữ liệu lab, sinh viên nên hiểu rõ: - đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường - đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\" - đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả - đơn `completed` vẫn có thể còn tron"
+    ],
+    "citations": [
+      "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+      "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+      "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+      "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện"
+    ],
+    "hits": [
+      {
+        "id": "policy_chunk_0022",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "content": "Trong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng\n\nTrong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "distance": 0.25877100229263306
+      },
+      {
+        "id": "policy_chunk_0016",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.4. Bằng chứng cần cung cấp",
+        "content": "Khi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.4. Bằng chứng cần cung cấp\n\nKhi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "distance": 0.2788909077644348
+      },
+      {
+        "id": "policy_chunk_0013",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.1. Điều kiện chung để gửi yêu cầu",
+        "content": "Khách hàng có thể gửi yêu cầu trả hàng / hoàn tiền khi có căn cứ hợp lý và còn trong thời hạn hỗ trợ của hệ thống.\n\nTrong bộ mock policy này, thời hạn mặc định là:\n\n- tối đa **15 ngày kể từ khi đơn cập nhật giao hàng thành công** đối với đa số ngành hàng thông thường\n- tối đa **3 ngày** đối với hàng tiêu dùng nhanh, mỹ phẩm dùng thử, thực phẩm hoặc sản phẩm có rủi ro vệ sinh cao\n- tối đa **24 giờ** đối với hàng tươi sống hoặc hàng có điều kiện bảo quản đặc biệt\n\nThời hạn cụ thể có thể được ghi đè ở dữ liệu sản phẩm hoặc dữ liệu đơn hàng bằng các trường như:\n\n- `return_window_days`\n- `returnable`\n- `eligible_for_return_until`",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.1. Điều kiện chung để gửi yêu cầu\n\nKhách hàng có thể gửi yêu cầu trả hàng / hoàn tiền khi có căn cứ hợp lý và còn trong thời hạn hỗ trợ của hệ thống.\n\nTrong bộ mock policy này, thời hạn mặc định là:\n\n- tối đa **15 ngày kể từ khi đơn cập nhật giao hàng thành công** đối với đa số ngành hàng thông thường\n- tối đa **3 ngày** đối với hàng tiêu dùng nhanh, mỹ phẩm dùng thử, thực phẩm hoặc sản phẩm có rủi ro vệ sinh cao\n- tối đa **24 giờ** đối với hàng tươi sống hoặc hàng có điều kiện bảo quản đặc biệt\n\nThời hạn cụ thể có thể được ghi đè ở dữ liệu sản phẩm hoặc dữ liệu đơn hàng bằng các trường như:\n\n- `return_window_days`\n- `returnable`\n- `eligible_for_return_until`",
+        "distance": 0.2806267738342285
+      },
+      {
+        "id": "policy_chunk_0010",
+        "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.5. Tách đơn và giao nhiều kiện",
+        "content": "Một đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.5. Tách đơn và giao nhiều kiện\n\nMột đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "distance": 0.2903585433959961
+      }
+    ]
+  },
+  "data_result": {
+    "status": "ok",
+    "facts": [
+      "Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "2058"
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "ok",
+        "order": {
+          "order_id": "2058",
+          "customer_id": "C014",
+          "customer_name": "Võ Thanh Quân",
+          "order_status": "delivered",
+          "payment_method": "credit_card",
+          "payment_status": "paid",
+          "shipping_method": "standard",
+          "carrier": "Giao Hang Nhanh",
+          "tracking_number": "VN2058450091",
+          "warehouse_city": "Ha Noi",
+          "destination_city": "Ha Noi",
+          "destination_district": "Dong Da",
+          "created_at": "2026-05-29T09:20",
+          "packed_at": "2026-05-29T14:10",
+          "handed_over_at": "2026-05-30T08:30",
+          "estimated_delivery": "2026-06-02",
+          "delivered_at": "2026-06-01T17:10",
+          "completed_at": null,
+          "eligible_for_return_until": "2026-06-16",
+          "can_return_now": true,
+          "returnable_items_count": 2,
+          "subtotal": 1465000,
+          "shipping_fee": 32000,
+          "discount_amount": 150000,
+          "final_total": 1347000,
+          "voucher_code": "PLATFORM-15-2058",
+          "is_split_order": true,
+          "parcel_count": 2,
+          "current_location": "Delivered",
+          "latest_status_note": "Đơn đã giao thành công và vẫn còn trong thời gian hỗ trợ trả hàng.",
+          "items": [
+            {
+              "product_id": "P205801",
+              "seller_sku": "SKU-2058-01",
+              "product_name": "Tai nghe Bluetooth AirBeat S5",
+              "category": "electronics",
+              "quantity": 1,
+              "unit_price": 760000,
+              "returnable": true,
+              "return_window_days": 15,
+              "fragile": false,
+              "shop_name": "TechHub Official"
+            },
+            {
+              "product_id": "P205802",
+              "seller_sku": "SKU-2058-02",
+              "product_name": "Sạc nhanh 65W NovaCharge",
+              "category": "electronics",
+              "quantity": 1,
+              "unit_price": 705000,
+              "returnable": true,
+              "return_window_days": 15,
+              "fragile": false,
+              "shop_name": "TechHub Official"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "final_answer": "Answer: Đơn hàng 2058 có thể gửi yêu cầu trả hàng ở thời điểm hiện tại. Đơn đã giao thành công, cửa sổ trả hàng còn đến 2026-06-16; policy mặc định hỗ trợ đa số ngành hàng trong tối đa 15 ngày kể từ khi giao thành công.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp; 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Đơn hàng 2058 nếu khách đổi ý thì có thể trả trong bao lâu?",
+      "route": {
+        "status": "ok",
+        "needs_policy": true,
+        "needs_data": true,
+        "selected_workers": [
+          "policy",
+          "data"
+        ],
+        "order_ids": [
+          "2058"
+        ],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "status": "success",
+          "needs_policy": true,
+          "needs_data": true,
+          "clarification_question": null
+        }
+      }
+    },
+    {
+      "node": "worker_1_policy",
+      "tool": "search_policy",
+      "query": "Đơn hàng 2058 nếu khách đổi ý thì có thể trả trong bao lâu?",
+      "hits": [
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+          "distance": 0.25877100229263306
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+          "distance": 0.2788909077644348
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+          "distance": 0.2806267738342285
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+          "distance": 0.2903585433959961
+        }
+      ],
+      "result": {
+        "summary": "Trong dữ liệu lab, sinh viên nên hiểu rõ: - đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường - đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\" - đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả - đơn `completed` vẫn có thể còn tron",
+        "citations": [
+          "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+          "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+          "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+          "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện"
+        ]
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_order_detail_by_order_id",
+          "args": {
+            "order_id": "2058"
+          }
+        }
+      ],
+      "result_status": "ok",
+      "facts": [
+        "Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+      ],
+      "not_found_entities": []
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Đơn hàng 2058 có thể gửi yêu cầu trả hàng ở thời điểm hiện tại. Đơn đã giao thành công, cửa sổ trả hàng còn đến 2026-06-16; policy mặc định hỗ trợ đa số ngành hàng trong tối đa 15 ngày kể từ khi giao thành công.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp; 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện\n- Order data: Đơn 2058: trạng thái delivered, dự kiến giao 2026-06-02, delivered_at=2026-06-01T17:10, eligible_for_return_until=2026-06-16, can_return_now=True."
+    }
+  ]
+}

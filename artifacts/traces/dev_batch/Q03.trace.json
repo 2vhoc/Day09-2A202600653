@@ -1,0 +1,137 @@
+{
+  "question": "Khách có được kiểm hàng khi nhận không?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": true,
+    "needs_data": false,
+    "selected_workers": [
+      "policy"
+    ],
+    "order_ids": [],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "status": "success",
+      "needs_policy": true,
+      "needs_data": false,
+      "clarification_question": null
+    }
+  },
+  "policy_result": {
+    "status": "ok",
+    "query": "Khách có được kiểm hàng khi nhận không?\n4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+    "summary": "Khách được kiểm tra ngoại quan gói hàng khi nhận; việc dùng thử sâu, lắp đặt hoặc sử dụng lâu dài không thuộc phạm vi kiểm hàng tại chỗ.",
+    "facts": [
+      "Khách được kiểm tra ngoại quan gói hàng khi nhận; việc dùng thử sâu, lắp đặt hoặc sử dụng lâu dài không thuộc phạm vi kiểm hàng tại chỗ."
+    ],
+    "citations": [
+      "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+      "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+      "4. Chính sách giao hàng > 4.7. Giao hàng không thành công",
+      "7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ"
+    ],
+    "hits": [
+      {
+        "id": "policy_chunk_0011",
+        "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.6. Kiểm hàng khi nhận",
+        "content": "Khách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.6. Kiểm hàng khi nhận\n\nKhách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "distance": 0.16353559494018555
+      },
+      {
+        "id": "policy_chunk_0010",
+        "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.5. Tách đơn và giao nhiều kiện",
+        "content": "Một đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.5. Tách đơn và giao nhiều kiện\n\nMột đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "distance": 0.16637909412384033
+      },
+      {
+        "id": "policy_chunk_0012",
+        "citation": "4. Chính sách giao hàng > 4.7. Giao hàng không thành công",
+        "section_h2": "4. Chính sách giao hàng",
+        "section_h3": "4.7. Giao hàng không thành công",
+        "content": "Đơn hàng có thể bị cập nhật `delivery_failed` khi:\n\n- người nhận không nghe máy sau nhiều lần liên hệ\n- địa chỉ giao không chính xác\n- người nhận hẹn lại nhiều lần vượt quá ngưỡng hỗ trợ\n- khách từ chối nhận hàng không có lý do phù hợp\n- khu vực giao hàng tạm thời bị hạn chế\n\nTrong trường hợp giao không thành công:\n\n- hệ thống có thể tự động lên lịch giao lại\n- hoặc chuyển hoàn về kho / shop\n- hoặc hủy đơn tùy trạng thái thanh toán và điều kiện vận hành",
+        "rendered_text": "## 4. Chính sách giao hàng\n\n### 4.7. Giao hàng không thành công\n\nĐơn hàng có thể bị cập nhật `delivery_failed` khi:\n\n- người nhận không nghe máy sau nhiều lần liên hệ\n- địa chỉ giao không chính xác\n- người nhận hẹn lại nhiều lần vượt quá ngưỡng hỗ trợ\n- khách từ chối nhận hàng không có lý do phù hợp\n- khu vực giao hàng tạm thời bị hạn chế\n\nTrong trường hợp giao không thành công:\n\n- hệ thống có thể tự động lên lịch giao lại\n- hoặc chuyển hoàn về kho / shop\n- hoặc hủy đơn tùy trạng thái thanh toán và điều kiện vận hành",
+        "distance": 0.22726905345916748
+      },
+      {
+        "id": "policy_chunk_0031",
+        "citation": "7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ",
+        "section_h2": "7. Hỗ trợ khách hàng và khiếu nại",
+        "section_h3": "7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ",
+        "content": "Để hệ thống hoặc agent trả lời chính xác hơn, khách nên cung cấp:\n\n- mã đơn hàng\n- mã khách hàng hoặc số điện thoại đã đăng ký\n- sản phẩm cần hỗ trợ\n- nội dung vấn đề\n- ảnh hoặc video nếu có",
+        "rendered_text": "## 7. Hỗ trợ khách hàng và khiếu nại\n\n### 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ\n\nĐể hệ thống hoặc agent trả lời chính xác hơn, khách nên cung cấp:\n\n- mã đơn hàng\n- mã khách hàng hoặc số điện thoại đã đăng ký\n- sản phẩm cần hỗ trợ\n- nội dung vấn đề\n- ảnh hoặc video nếu có",
+        "distance": 0.22925442457199097
+      }
+    ]
+  },
+  "data_result": {},
+  "final_answer": "Answer: Khách được kiểm tra ngoại quan gói hàng khi nhận; việc dùng thử sâu, lắp đặt hoặc sử dụng lâu dài không thuộc phạm vi kiểm hàng tại chỗ.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận; 4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện; 4. Chính sách giao hàng > 4.7. Giao hàng không thành công; 7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Khách có được kiểm hàng khi nhận không?",
+      "route": {
+        "status": "ok",
+        "needs_policy": true,
+        "needs_data": false,
+        "selected_workers": [
+          "policy"
+        ],
+        "order_ids": [],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "status": "success",
+          "needs_policy": true,
+          "needs_data": false,
+          "clarification_question": null
+        }
+      }
+    },
+    {
+      "node": "worker_1_policy",
+      "tool": "search_policy",
+      "query": "Khách có được kiểm hàng khi nhận không?\n4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+      "hits": [
+        {
+          "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+          "distance": 0.16353559494018555
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+          "distance": 0.16637909412384033
+        },
+        {
+          "citation": "4. Chính sách giao hàng > 4.7. Giao hàng không thành công",
+          "distance": 0.22726905345916748
+        },
+        {
+          "citation": "7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ",
+          "distance": 0.22925442457199097
+        }
+      ],
+      "result": {
+        "summary": "Khách được kiểm tra ngoại quan gói hàng khi nhận; việc dùng thử sâu, lắp đặt hoặc sử dụng lâu dài không thuộc phạm vi kiểm hàng tại chỗ.",
+        "citations": [
+          "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+          "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+          "4. Chính sách giao hàng > 4.7. Giao hàng không thành công",
+          "7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ"
+        ]
+      }
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Khách được kiểm tra ngoại quan gói hàng khi nhận; việc dùng thử sâu, lắp đặt hoặc sử dụng lâu dài không thuộc phạm vi kiểm hàng tại chỗ.\nEvidence:\n- Policy: 4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận; 4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện; 4. Chính sách giao hàng > 4.7. Giao hàng không thành công; 7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    }
+  ]
+}

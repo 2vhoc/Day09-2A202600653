@@ -1,0 +1,44 @@
+{
+  "question": "Đơn hàng của tôi có được hoàn trả không?",
+  "status": "clarification_needed",
+  "route": {
+    "status": "clarification_needed",
+    "needs_policy": false,
+    "needs_data": false,
+    "selected_workers": [],
+    "order_ids": [],
+    "customer_ids": [],
+    "clarification_question": "Anh/chị vui lòng cung cấp mã đơn hàng để em kiểm tra chính xác.",
+    "reason": "Missing order_id for order-specific lookup.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {},
+  "data_result": {},
+  "final_answer": "Status: clarification_needed\nQuestion: Anh/chị vui lòng cung cấp mã đơn hàng để em kiểm tra chính xác.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Đơn hàng của tôi có được hoàn trả không?",
+      "route": {
+        "status": "clarification_needed",
+        "needs_policy": false,
+        "needs_data": false,
+        "selected_workers": [],
+        "order_ids": [],
+        "customer_ids": [],
+        "clarification_question": "Anh/chị vui lòng cung cấp mã đơn hàng để em kiểm tra chính xác.",
+        "reason": "Missing order_id for order-specific lookup.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_3_response",
+      "status": "clarification_needed",
+      "final_answer": "Status: clarification_needed\nQuestion: Anh/chị vui lòng cung cấp mã đơn hàng để em kiểm tra chính xác."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "question": "Chính sách hoàn trả hàng ra sao?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": true,
+    "needs_data": false,
+    "selected_workers": [
+      "policy"
+    ],
+    "order_ids": [],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "error": "Connection error."
+    }
+  },
+  "policy_result": {
+    "status": "ok",
+    "query": "Chính sách hoàn trả hàng ra sao?\n5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+    "summary": "Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.",
+    "facts": [
+      "Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công.",
+      "Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường."
+    ],
+    "citations": [
+      "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+      "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+      "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+      "5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu",
+      "5. Chính sách đổi trả và hoàn tiền > 5.7. Hình thức gửi trả",
+      "5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng",
+      "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp"
+    ],
+    "hits": [
+      {
+        "id": "policy_chunk_0021",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.9. Hoàn tiền",
+        "content": "Tiền hoàn có thể được trả về:\n\n- ví nội bộ của nền tảng\n- tài khoản ngân hàng\n- thẻ thanh toán\n- phương thức thanh toán gốc nếu hạ tầng thanh toán hỗ trợ\n\nThời gian nhận tiền thực tế có thể phụ thuộc:\n\n- cổng thanh toán\n- ngân hàng phát hành\n- trạng thái đối soát\n- việc xác minh chứng từ của bộ phận vận hành",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.9. Hoàn tiền\n\nTiền hoàn có thể được trả về:\n\n- ví nội bộ của nền tảng\n- tài khoản ngân hàng\n- thẻ thanh toán\n- phương thức thanh toán gốc nếu hạ tầng thanh toán hỗ trợ\n\nThời gian nhận tiền thực tế có thể phụ thuộc:\n\n- cổng thanh toán\n- ngân hàng phát hành\n- trạng thái đối soát\n- việc xác minh chứng từ của bộ phận vận hành",
+        "distance": 0.17368751764297485
+      },
+      {
+        "id": "policy_chunk_0017",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.5. Trình tự xử lý yêu cầu",
+        "content": "Quy trình xử lý mẫu trong lab:\n\n1. Khách tạo yêu cầu trên ứng dụng\n2. Hệ thống ghi nhận lý do và bằng chứng\n3. Nhà bán hoặc bộ phận vận hành phản hồi vòng đầu\n4. Nếu cần trả hàng, khách chọn hình thức gửi trả\n5. Hệ thống xác nhận trạng thái hàng trả về\n6. Hoàn tiền được thực hiện sau khi yêu cầu được chấp thuận",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.5. Trình tự xử lý yêu cầu\n\nQuy trình xử lý mẫu trong lab:\n\n1. Khách tạo yêu cầu trên ứng dụng\n2. Hệ thống ghi nhận lý do và bằng chứng\n3. Nhà bán hoặc bộ phận vận hành phản hồi vòng đầu\n4. Nếu cần trả hàng, khách chọn hình thức gửi trả\n5. Hệ thống xác nhận trạng thái hàng trả về\n6. Hoàn tiền được thực hiện sau khi yêu cầu được chấp thuận",
+        "distance": 0.18559885025024414
+      },
+      {
+        "id": "policy_chunk_0013",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.1. Điều kiện chung để gửi yêu cầu",
+        "content": "Khách hàng có thể gửi yêu cầu trả hàng / hoàn tiền khi có căn cứ hợp lý và còn trong thời hạn hỗ trợ của hệ thống.\n\nTrong bộ mock policy này, thời hạn mặc định là:\n\n- tối đa **15 ngày kể từ khi đơn cập nhật giao hàng thành công** đối với đa số ngành hàng thông thường\n- tối đa **3 ngày** đối với hàng tiêu dùng nhanh, mỹ phẩm dùng thử, thực phẩm hoặc sản phẩm có rủi ro vệ sinh cao\n- tối đa **24 giờ** đối với hàng tươi sống hoặc hàng có điều kiện bảo quản đặc biệt\n\nThời hạn cụ thể có thể được ghi đè ở dữ liệu sản phẩm hoặc dữ liệu đơn hàng bằng các trường như:\n\n- `return_window_days`\n- `returnable`\n- `eligible_for_return_until`",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.1. Điều kiện chung để gửi yêu cầu\n\nKhách hàng có thể gửi yêu cầu trả hàng / hoàn tiền khi có căn cứ hợp lý và còn trong thời hạn hỗ trợ của hệ thống.\n\nTrong bộ mock policy này, thời hạn mặc định là:\n\n- tối đa **15 ngày kể từ khi đơn cập nhật giao hàng thành công** đối với đa số ngành hàng thông thường\n- tối đa **3 ngày** đối với hàng tiêu dùng nhanh, mỹ phẩm dùng thử, thực phẩm hoặc sản phẩm có rủi ro vệ sinh cao\n- tối đa **24 giờ** đối với hàng tươi sống hoặc hàng có điều kiện bảo quản đặc biệt\n\nThời hạn cụ thể có thể được ghi đè ở dữ liệu sản phẩm hoặc dữ liệu đơn hàng bằng các trường như:\n\n- `return_window_days`\n- `returnable`\n- `eligible_for_return_until`",
+        "distance": 0.20562851428985596
+      },
+      {
+        "id": "policy_chunk_0019",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.7. Hình thức gửi trả",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.7. Hình thức gửi trả",
+        "content": "Khách có thể gửi trả theo một trong các hình thức:\n\n- `drop_off`: mang hàng tới bưu cục đối tác\n- `pickup`: đơn vị vận chuyển đến lấy hàng tại nhà\n- `self_arranged`: khách tự sắp xếp đơn vị vận chuyển\n\nĐối với hình thức `self_arranged`, khách cần giữ lại:\n\n- biên nhận gửi hàng\n- mã vận đơn\n- thông tin người nhận hàng hoàn",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.7. Hình thức gửi trả\n\nKhách có thể gửi trả theo một trong các hình thức:\n\n- `drop_off`: mang hàng tới bưu cục đối tác\n- `pickup`: đơn vị vận chuyển đến lấy hàng tại nhà\n- `self_arranged`: khách tự sắp xếp đơn vị vận chuyển\n\nĐối với hình thức `self_arranged`, khách cần giữ lại:\n\n- biên nhận gửi hàng\n- mã vận đơn\n- thông tin người nhận hàng hoàn",
+        "distance": 0.21421462297439575
+      },
+      {
+        "id": "policy_chunk_0022",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "content": "Trong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng\n\nTrong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "distance": 0.2
+      },
+      {
+        "id": "policy_chunk_0015",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.3. Các trường hợp không hỗ trợ trả hàng",
+        "content": "Để phù hợp với một hệ thống thương mại điện tử thực tế, các trường hợp sau thường bị giới hạn hoặc không hỗ trợ trả hàng:\n\n- sản phẩm tiêu dùng đã mở niêm phong và không còn khả năng bán lại\n- thực phẩm tươi sống hoặc hàng đông lạnh sau khi đã giao thành công\n- đồ lót, sản phẩm chăm sóc cá nhân, mỹ phẩm đã qua sử dụng\n- phần mềm, thẻ quà tặng điện tử, mã nạp điện tử\n- hàng đặt riêng, cá nhân hóa theo yêu cầu\n- sản phẩm bị hư hỏng do khách sử dụng sai hướng dẫn\n- khách gửi lại sai hàng, thiếu phụ kiện hoặc không đúng serial\n\nCác trường hợp trên vẫn có thể được hỗ trợ hoàn tiền một phần hoặc xử lý ngoại lệ nếu có quyết định từ bộ phận chăm sóc khách hàng.",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.3. Các trường hợp không hỗ trợ trả hàng\n\nĐể phù hợp với một hệ thống thương mại điện tử thực tế, các trường hợp sau thường bị giới hạn hoặc không hỗ trợ trả hàng:\n\n- sản phẩm tiêu dùng đã mở niêm phong và không còn khả năng bán lại\n- thực phẩm tươi sống hoặc hàng đông lạnh sau khi đã giao thành công\n- đồ lót, sản phẩm chăm sóc cá nhân, mỹ phẩm đã qua sử dụng\n- phần mềm, thẻ quà tặng điện tử, mã nạp điện tử\n- hàng đặt riêng, cá nhân hóa theo yêu cầu\n- sản phẩm bị hư hỏng do khách sử dụng sai hướng dẫn\n- khách gửi lại sai hàng, thiếu phụ kiện hoặc không đúng serial\n\nCác trường hợp trên vẫn có thể được hỗ trợ hoàn tiền một phần hoặc xử lý ngoại lệ nếu có quyết định từ bộ phận chăm sóc khách hàng.",
+        "distance": 0.3333333333333333
+      },
+      {
+        "id": "policy_chunk_0016",
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+        "section_h2": "5. Chính sách đổi trả và hoàn tiền",
+        "section_h3": "5.4. Bằng chứng cần cung cấp",
+        "content": "Khi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "rendered_text": "## 5. Chính sách đổi trả và hoàn tiền\n\n### 5.4. Bằng chứng cần cung cấp\n\nKhi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "distance": 0.3333333333333333
+      }
+    ]
+  },
+  "data_result": {},
+  "final_answer": "Answer: Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Chính sách hoàn trả hàng ra sao?",
+      "route": {
+        "status": "ok",
+        "needs_policy": true,
+        "needs_data": false,
+        "selected_workers": [
+          "policy"
+        ],
+        "order_ids": [],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "error": "Connection error."
+        }
+      }
+    },
+    {
+      "node": "worker_1_policy",
+      "tool": "search_policy",
+      "query": "Chính sách hoàn trả hàng ra sao?\n5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+      "hits": [
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+          "distance": 0.17368751764297485
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu",
+          "distance": 0.18559885025024414
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+          "distance": 0.20562851428985596
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.7. Hình thức gửi trả",
+          "distance": 0.21421462297439575
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+          "distance": 0.2
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng",
+          "distance": 0.3333333333333333
+        },
+        {
+          "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+          "distance": 0.3333333333333333
+        }
+      ],
+      "result": {
+        "summary": "Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.",
+        "citations": [
+          "5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu",
+          "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+          "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+          "5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu",
+          "5. Chính sách đổi trả và hoàn tiền > 5.7. Hình thức gửi trả",
+          "5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng",
+          "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp"
+        ]
+      }
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Thời hạn mặc định cho đa số ngành hàng là tối đa 15 ngày kể từ khi đơn giao hàng thành công. Đơn chưa giao thành công thường chưa thể bắt đầu quy trình trả hàng thông thường.\nEvidence:\n- Policy: 5. Chính sách đổi trả và hoàn tiền > 5.1. Điều kiện chung để gửi yêu cầu; 5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng; 5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền; 5. Chính sách đổi trả và hoàn tiền > 5.5. Trình tự xử lý yêu cầu\n- Order data: Không dùng dữ liệu đơn hàng/khách hàng."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "question": "Đơn hàng 1971 bao giờ được giao?",
+  "status": "ok",
+  "route": {
+    "status": "ok",
+    "needs_policy": false,
+    "needs_data": true,
+    "selected_workers": [
+      "data"
+    ],
+    "order_ids": [
+      "1971"
+    ],
+    "customer_ids": [],
+    "clarification_question": null,
+    "reason": "Rule-based route with optional LLM trace.",
+    "llm_route": {
+      "status": "success",
+      "needs_policy": false,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  "policy_result": {},
+  "data_result": {
+    "status": "ok",
+    "facts": [
+      "Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "1971"
+        }
+      }
+    ],
+    "tool_results": [
+      {
+        "status": "ok",
+        "order": {
+          "order_id": "1971",
+          "customer_id": "C001",
+          "customer_name": "Nguyen Thu Anh",
+          "order_status": "in_transit",
+          "payment_method": "e_wallet",
+          "payment_status": "paid",
+          "shipping_method": "fast",
+          "carrier": "SPX Express",
+          "tracking_number": "VN1971888123",
+          "warehouse_city": "Ho Chi Minh",
+          "destination_city": "Ho Chi Minh",
+          "destination_district": "Binh Thanh",
+          "created_at": "2026-06-05T10:15",
+          "packed_at": "2026-06-05T13:40",
+          "handed_over_at": "2026-06-05T17:10",
+          "estimated_delivery": "2026-06-09",
+          "delivered_at": null,
+          "completed_at": null,
+          "eligible_for_return_until": null,
+          "can_return_now": false,
+          "returnable_items_count": 1,
+          "subtotal": 1180000,
+          "shipping_fee": 28000,
+          "discount_amount": 90000,
+          "final_total": 1118000,
+          "voucher_code": "PLAT-FS-0626-C001",
+          "is_split_order": false,
+          "parcel_count": 1,
+          "current_location": "Destination Delivery Station",
+          "latest_status_note": "Đơn hàng đang trên đường giao, dự kiến giao trong ngày 2026-06-09.",
+          "items": [
+            {
+              "product_id": "P197101",
+              "seller_sku": "SKU-1971-01",
+              "product_name": "Giày sneaker StreetGo",
+              "category": "fashion",
+              "quantity": 1,
+              "unit_price": 1180000,
+              "returnable": true,
+              "return_window_days": 15,
+              "fragile": false,
+              "shop_name": "StyleLab Fashion"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "final_answer": "Answer: Đơn hàng 1971 đang ở trạng thái in_transit. Dự kiến giao ngày 2026-06-09; ghi chú mới nhất: Đơn hàng đang trên đường giao, dự kiến giao trong ngày 2026-06-09.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False.",
+  "trace": [
+    {
+      "node": "supervisor",
+      "question": "Đơn hàng 1971 bao giờ được giao?",
+      "route": {
+        "status": "ok",
+        "needs_policy": false,
+        "needs_data": true,
+        "selected_workers": [
+          "data"
+        ],
+        "order_ids": [
+          "1971"
+        ],
+        "customer_ids": [],
+        "clarification_question": null,
+        "reason": "Rule-based route with optional LLM trace.",
+        "llm_route": {
+          "status": "success",
+          "needs_policy": false,
+          "needs_data": true,
+          "clarification_question": null
+        }
+      }
+    },
+    {
+      "node": "worker_2_data",
+      "tool_calls": [
+        {
+          "tool": "get_order_detail_by_order_id",
+          "args": {
+            "order_id": "1971"
+          }
+        }
+      ],
+      "result_status": "ok",
+      "facts": [
+        "Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+      ],
+      "not_found_entities": []
+    },
+    {
+      "node": "worker_3_response",
+      "status": "ok",
+      "final_answer": "Answer: Đơn hàng 1971 đang ở trạng thái in_transit. Dự kiến giao ngày 2026-06-09; ghi chú mới nhất: Đơn hàng đang trên đường giao, dự kiến giao trong ngày 2026-06-09.\nEvidence:\n- Policy: Không dùng policy.\n- Order data: Đơn 1971: trạng thái in_transit, dự kiến giao 2026-06-09, delivered_at=None, eligible_for_return_until=None, can_return_now=False."
+    }
+  ]
+}
